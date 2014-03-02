@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node lib/server.js",
+    "start": "node_modules/node-dev/bin/node-dev lib/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/watilde/trotline",
   "devDependencies": {
     "gulp": "^3.5.2"
+  },
+  "dependencies": {
+    "node-dev": "^2.1.6"
   }
 }

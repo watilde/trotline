@@ -7,3 +7,8 @@ gulp.task('default', function() {
     .pipe(watch())
     .pipe(jshint());
 });
+
+gulp.task('test', function() {
+  gulp.src('./lib/*.js')
+    .pipe(jshint());
+});

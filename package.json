@@ -21,7 +21,10 @@
     "gulp": "^3.5.2",
     "gulp-jshint": "^1.5.0",
     "gulp-watch": "^0.5.0",
-    "gulp-yuidoc": "^0.1.1"
+    "gulp-yuidoc": "^0.1.1",
+    "grunt": "^0.4.2",
+    "grunt-gh-pages": "^0.9.1",
+    "gulp-grunt": "^0.4.1"
   },
   "dependencies": {
     "node-dev": "^2.1.6"

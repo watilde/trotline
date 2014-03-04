@@ -1,16 +1,17 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
-        "trotline"
+        "Server",
+        "Trotline"
     ],
     "modules": [
-        "server"
+        "trotline"
     ],
     "allModules": [
         {
-            "displayName": "server",
-            "name": "server",
-            "description": "Create server"
+            "displayName": "trotline",
+            "name": "trotline",
+            "description": "Trotline Interface"
         }
     ]
 } };

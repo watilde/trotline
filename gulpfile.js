@@ -1,14 +1,15 @@
 var gulp   = require('gulp');
 var jshint = require('gulp-jshint');
 var watch  = require('gulp-watch');
+var path   = './lib/*.js';
 
-gulp.task('default', function() {
-  gulp.src('./lib/*.js')
-    .pipe(watch())
-    .pipe(jshint());
+gulp.task('watch', function() {
+  gulp.watch(path, ['test']);
 });
 
 gulp.task('test', function() {
-  gulp.src('./lib/*.js')
+  return gulp.src(path)
     .pipe(jshint());
 });
+
+gulp.task('default', ['test', 'watch']);

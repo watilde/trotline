@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Server</title>
+    <title>Stream</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -88,7 +88,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>Server Class</h1>
+                        <h1>Stream Class</h1>
 <div class="box meta">
     
 
@@ -96,7 +96,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/_Users_watilde_Development_trotline_lib_trotline_server.js.html#l1"><code>&#x2F;Users&#x2F;watilde&#x2F;Development&#x2F;trotline&#x2F;lib&#x2F;trotline&#x2F;server.js:1</code></a>
+            Defined in: <a href="../files/_Users_watilde_Development_trotline_lib_trotline_stream.js.html#l1"><code>&#x2F;Users&#x2F;watilde&#x2F;Development&#x2F;trotline&#x2F;lib&#x2F;trotline&#x2F;stream.js:1</code></a>
         </div>
     
 
@@ -112,15 +112,15 @@
 
 
 <div class="box intro">
-    <p>Create server</p>
+    <p>Stream server</p>
 
 </div>
 
 
     <div class="constructor">
         <h2>Constructor</h2>
-        <div id="method_Server" class="method item">
-    <h3 class="name"><code>Server</code></h3>
+        <div id="method_Stream" class="method item">
+    <h3 class="name"><code>Stream</code></h3>
 
     
         <div class="args">
@@ -128,25 +128,7 @@
             
                 <li class="arg">
                     
-                        <code class="optional">[host=&#x27;127.0.0.1&#x27;]</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code class="optional">[port=1337]</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>callback</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code class="optional">[ssl=false]</code>
+                        <code>req</code>
                     
                 </li>
             
@@ -154,6 +136,10 @@
         </div>
     
 
+    
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
     
 
     
@@ -179,7 +165,7 @@
             
         
         
-        <a href="../files/_Users_watilde_Development_trotline_lib_trotline_server.js.html#l1"><code>&#x2F;Users&#x2F;watilde&#x2F;Development&#x2F;trotline&#x2F;lib&#x2F;trotline&#x2F;server.js:1</code></a>
+        <a href="../files/_Users_watilde_Development_trotline_lib_trotline_stream.js.html#l1"><code>&#x2F;Users&#x2F;watilde&#x2F;Development&#x2F;trotline&#x2F;lib&#x2F;trotline&#x2F;stream.js:1</code></a>
         
         </p>
 
@@ -201,65 +187,14 @@
             
                 <li class="param">
                     
-                        <code class="param-name optional">[host=&#x27;127.0.0.1&#x27;]</code>
-                        <span class="type">String</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                        <code class="param-name">req</code>
+                        <span class="type">Object</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Host IP Address</p>
-
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name optional">[port=1337]</code>
-                        <span class="type">Number</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Port Number</p>
-
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">callback</code>
-                        <span class="type">Function</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>After Getting HTTP Request</p>
-
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name optional">[ssl=false]</code>
-                        <span class="type">Boolean</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Use https or not</p>
+                        <p>http request object</p>
 
                     </div>
 
@@ -270,6 +205,20 @@
         </div>
     
 
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type">Object</span>:
+                    
+                    <p>res  http response object</p>
+
+                
+            </div>
+        </div>
     
 
     

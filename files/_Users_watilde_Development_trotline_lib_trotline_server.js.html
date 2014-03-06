@@ -43,6 +43,8 @@
             
                 <li><a href="../classes/Server.html">Server</a></li>
             
+                <li><a href="../classes/Stream.html">Stream</a></li>
+            
                 <li><a href="../classes/Trotline.html">Trotline</a></li>
             
             </ul>
@@ -111,7 +113,7 @@ module.exports = function (host, port, callback, ssl) {
   callback = callback || function(){
     return {
       header: {&#x27;Content-Type&#x27;: &#x27;application/json&#x27;},
-        body: &#x27;{&quot;status&quot;: true}&#x27;
+      body: &#x27;{&quot;status&quot;: true}&#x27;
     };
   };
 
@@ -124,7 +126,7 @@ module.exports = function (host, port, callback, ssl) {
       }
     });
     req.on(&#x27;end&#x27;, function () {
-      var result = callback(res);
+      var result = callback(req);
       var header = result.header;
       var body   = result.body;
       for (var key in header) {

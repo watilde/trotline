@@ -92,20 +92,25 @@
 
 <div class="file">
     <pre class="code prettyprint linenums">
- /**
-  * Stream server
-  *
-  * @class Stream
-  * @module trotline
-  * @constructor
-  * @param req {Object} http request object
-  * @return res {Object} http response object
-  */
+/**
+ * Stream server
+ *
+ * @class Stream
+ * @module trotline
+ * @constructor
+ * @param req {Object} http request object
+ * @return res {Object} http response object
+ */
 module.exports = function (req) {
   var res = {
-    header: {&#x27;Content-Type&#x27;: &#x27;application/json&#x27;},
-    body: &#x27;{&quot;status&quot;: true}&#x27;
+    &#x27;header&#x27;: {&#x27;Content-Type&#x27;: &#x27;application/json&#x27;},
+    &#x27;body&#x27;: &#x27;{&quot;status&quot;: true}&#x27;
   };
+
+  if (req.method === &#x27;GET&#x27;) {
+  } else if (req.method === &#x27;POST&#x27;) {
+  }
+
   return res;
 };
 

@@ -6,7 +6,7 @@ var clean  = require('gulp-clean');
 require('gulp-grunt')(gulp);
 
 var path = {
-  main: ['./lib/main.js', './lib/trotline/*.js'],
+  main: ['./lib/*.js', './lib/trotline/*.js'],
   docs: './docs'
 };
 

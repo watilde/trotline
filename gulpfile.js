@@ -10,6 +10,9 @@ var path = {
   docs: './docs'
 };
 
+gulp.task('foo', function() {
+  console.log(gulp.src('https://google.com'));
+});
 // Test
 gulp.task('test', function() {
   return gulp.src(path.main)
